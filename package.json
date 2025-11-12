@@ -1,0 +1,41 @@
+{
+    "name": "pandata",
+    "version": "1.0.0",
+    "homepage": "https://alexstevovich.com/a/pandata-nodejs",
+    "author": {
+        "name": "Alex Stevovich",
+        "email": "dev@alexstevovich.com",
+        "url": "https://alexstevovich.com"
+    },
+    "description": "A universal data substrate that can be declaratively specialized.",
+    "type": "module",
+    "main": "./src/index.js",
+    "files": [
+        "./src"
+    ],
+    "license": "Apache-2.0",
+    "scripts": {
+        "poshify": "npx poshify",
+        "pretty": "npx prettier --write .",
+        "lint": "eslint ./src/",
+        "lint:fix": "eslint --fix ./src/",
+        "test": "npx vitest --run",
+        "build": "npm run poshify && npm run pretty && npm run lint:fix && npm run lint"
+    },
+    "keywords": [
+        "json",
+        "data",
+        "in-memory",
+        "manipulation",
+        "filtering",
+        "sorting"
+    ],
+    "devDependencies": {
+        "eslint": "^9.36.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.4",
+        "poshify": "^1.0.0",
+        "prettier": "^3.6.2",
+        "vitest": "^3.2.4"
+    }
+}
